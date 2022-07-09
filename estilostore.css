@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'nome';
-    src: url('../fontes/DarkXShadow\ Skyrim\ Font.ttf') format('TrueType');
+    src: url('./fontes/DarkXShadow\ Skyrim\ Font.ttf') format('TrueType');
     font-style: normal;
     font-weight: normal;
     }
