@@ -147,6 +147,7 @@ header .linha {
     flex-basis: 25%;
     padding: 10px;
     min-width: 200px;
+    margin-top: 50px;
     margin-bottom: 50px;
     transition: transform 0.5s;
     max-width: 230px;
