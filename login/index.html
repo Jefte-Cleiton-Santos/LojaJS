@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login page</title>
+    <title>Página de Login</title>
 
 <link rel="stylesheet" href="./estilologin.css">
-
+<!--
+<script src="http://kit.fontawesome.com/64d58efce2.js"></script>
+-->
 </head>
 <body>
 
@@ -25,45 +27,67 @@
             <ul class="nav-list">
                 <li><a href="../portifolio/index.html">Portifólio</a></li>
                 <li><a href="../contatos/index.html">Contatos</a></li>
-                <li><a href="../cadastro page/index.html">Cadastro</a></li>
+                <li><a href="../cadastro_page/index.html">Cadastro</a></li>
                 <li><a href="../index.html">Loja JS</a></li>
             </ul>
         </nav>
     </header>
 
-    <main></main>
+<!--agora vai -->
 
+<main>
 
-    <div class="container-pai">
+    <div class="container">
+
         <div class="form-container">
             <div class="entrar-cadastrar">
                 <form action="" class="entrar-form">
-                <h2 class="titulo">Entrar</h2>
+
+                <h2 class="titulo">Login</h2>
+
                 <div class="input-field">
+                    <!--icone area sem css-->
+
                     <i class="fas fa-user"></i>
                     <input type="text" placeholder="Nome de usuário">
                 </div>
 
                 <div class="input-field">
+                    <!--icone area sem css-->
                     <i class="fas fa-lock"></i>
                     <input type="password" placeholder="Senha">
                 </div>
+
                 <input type="submit" value="Login" class="btn solid">
 
-                <p class="socoal-text">OU Entre com Rede Social</p>
+                <p class="socoal-text"><br> OU Entre com Rede Social</p>
                 <div class="midia-social">
-                <a href="#" class="social-icone">
-                    <i class="fab fa-facebook-f"></i>
+
+                <a href="#" class="social-icone"><!--nesta ancora vai o link do facebook-->
+                    <img src="../imagemsite/facebook.png" class="icone" alt="icone-do-facebook"><br>
+                    <i class="fab fa-facebook-f"> Facebook</i>
                 </a>
-                <a href="#" class="social-icone">
-                    <i class="fab fa-Instagram"></i>
+
+                <a href="#" class="social-icone"><!--nesta ancora vai o link do instagram-->
+                    <img src="../imagemsite/hackicone.ico" class="icone" alt="icone-instagram"><br>
+                    <i class="fab fa-Instagram">Instagram</i>
                 </a>
-                <a href="#" class="social-icone">
-                    <i class="fab fa-Gmail"></i>
+
+                <a href="#" class="social-icone"><!--nesta ancora vai o link do Email-->
+                    <img src="../imagemsite/o-email.png" alt="icone-email" class="icone"><br>
+                    <i class="fab fa-Gmail">Email</i>
                 </a>
-                <a href="#" class="social-icone">
-                    <i class="fa fa-linkedin"></i>
+
+                <a href="#" class="social-icone"><!--nesta ancora vai o link do Whatsapp-->
+                    <img src="../imagemsite/whatsapp.png" class="icone" alt="icone-Whatsapp"><br>
+                    <i class="fa fa-linkedin">Whatsapp</i>
                 </a>
+
+                <a href="#" class="social-icone"><!--nesta ancora vai o link do Linkedin-->
+                    <img src="../imagemsite/hackicone.ico" class="icone" alt="icone-linkedin"><br>
+                    <i class="fa fa-linkedin">Linkedin</i>
+                </a>
+
                 </div>
                 </form>
             </div>
@@ -72,7 +96,7 @@
         <div class="painel-container"></div>
     </div>
 
-    <script src="../menu/mobilemenu.js"></script>
+    </main>
 
 </body>
 </html>
