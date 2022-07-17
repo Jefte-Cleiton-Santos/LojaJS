@@ -7,18 +7,16 @@
 }
 
 body{
-    background-color: #8a9499;
     overflow-x: hidden;
+    background: #8a9499;
 }
 
-/*estilo menu*/
 
-
-/*coprighting css menu*/
+/*config menu*/
 a {
     color: aliceblue;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 1s;
     font-size: 1.3rem;
 }
 
@@ -43,16 +41,6 @@ nav {
     height: 8vh;
 }
 
-main {
-    color: #e9ba5c;
-    background: url(../imagemsite/moon.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-}
-
 .nav-list {
     list-style: none;
     display: flex;
@@ -68,6 +56,7 @@ main {
 .mobile-menu {
     cursor: pointer;
     display: none;
+    z-index: 1;
 }
 
 .mobile-menu div {
@@ -132,23 +121,7 @@ main {
 .mobile-menu.active .linha3{
     transform: rotate(45deg) translate(-5px, -7px);
 }
-
-/*inicio*/
-
-.icone{
-    width: 80px;
-    height: 80px;
-}
-
-.midia-social{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.midia-social .social-icone{
-    margin: 15px;
-}
+/*fim menu*/
 
 /*agora vai*/
 
@@ -159,16 +132,30 @@ main {
     overflow: hidden;
 }
 
+.container::before{
+content: '';
+position: absolute;
+width: 2000px;
+height: 2000px;
+border-radius: 50%;
+background: linear-gradient(-45deg, yellow, green);
+top: -10%;
+right: 48%;
+transform: translateY(-50%);
+z-index: 6;
+transition: 1.3s ease-in-out;
+}
+
 .forms-container{
     position: absolute;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
 }
 
 form{
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -217,7 +204,7 @@ form{
 .btn{
     width: 150px;
     height: 49px;
-    border: none;
+    border: 3px solid blue;
     outline: none;
     border-radius: 49px;
     cursor: pointer;
@@ -225,6 +212,150 @@ form{
     color: #e9ba5c;
     text-transform: uppercase;
     font-weight: 600;
+    margin: 10px 0;
+    transition: 0.5s;
 }
 
-/*pausa em 8 minutos*/
+.btn:hover{
+    background-color: #0e6c9b;
+}
+
+.social-text{
+    padding: 0.7rem 0;
+    font-size: 1.3rem;
+}
+
+.midia-social{
+    display: flex;
+    justify-content: center;
+}
+
+.midia-social a{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.social-icone img{
+    height: 46px;
+    width: 46px;
+    margin: 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icone img:hover{
+    width: 60px;
+    height: 60px;
+}
+
+/*equivale a sigin e signup*/
+.entrar-cadastrar{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+}
+
+form.sign-in-form{
+    z-index: 2;
+}
+
+form.sign-up-form{
+    z-index: 1;
+    opacity: 0;
+}
+
+.painel-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.painel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 7;
+}
+
+.painele-esquerdo{
+    pointer-events: all;
+    padding: 3rem 17% 2rem 12%;
+}
+
+.painele-direito{
+    pointer-events: none;
+    padding: 3rem 12% 2rem 12%;
+}
+
+.painel .content{
+    color: #680d68;
+    transition: .9 .6 ease-in-out;
+}
+
+.painel h3{
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.5rem;
+}
+
+.painel p{
+    font-size: 1.3rem;
+    padding: 0.8rem 0;
+}
+
+.imagem{
+    width: 100%;
+    transition: 1s .3s ease-in-out;
+}
+
+.btn .transparente{
+    margin: 0;
+    background: none;
+    border: 3px solid #68e95c;
+    width: 41px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.painele-direito .content, .painele-direito .imagem{
+    transform: translateX(800px);
+}
+
+/*bugou aqui 18min animação*/
+
+.container .sign-up-mode:before{
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+
+.container .sign-up-mode .painele-esquerdo .imagem
+.container .sign-up-mode .painele-esquerdo .content{
+    transform: translateX(-800px);
+}
+
+/*pausa em 20 min*/

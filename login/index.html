@@ -8,30 +8,32 @@
     <title>Página de Login</title>
 
 <link rel="stylesheet" href="./estilologin.css">
-<!--
-<script src="http://kit.fontawesome.com/64d58efce2.js"></script>
--->
+
 </head>
 <body>
 
     <header>
+    
         <nav>
             <a href="#" class="logo">jsdeveloper</a>
-
+    
             <div class="mobile-menu">
                 <div class="linha1"></div>
                 <div class="linha2"></div>
                 <div class="linha3"></div>
             </div>
-
+    
             <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="../portifolio/index.html">Portifólio</a></li>
-                <li><a href="../contatos/index.html">Contatos</a></li>
-                <li><a href="../cadastro_page/index.html">Cadastro</a></li>
-                <li><a href="../index.html">Loja JS</a></li>
+                <li><a href="../contatos/index. html">Contatos</a></li>
+                <li><a href="../login/index.html">Login</a></li>
+                <li><a href="../indexado/index.html">Loja JS</a></li>
+                
             </ul>
         </nav>
-    </header>
+    
+        </header>
 
 <!--agora vai -->
 
@@ -40,63 +42,137 @@
     <div class="container">
 
         <div class="form-container">
+
             <div class="entrar-cadastrar">
-                <form action="" class="entrar-form">
+                <!--signin-signup é entrar-cadastrar-->
+
+                <form action="" class="sign-in-form">
 
                 <h2 class="titulo">Login</h2>
 
                 <div class="input-field">
-                    <!--icone area sem css-->
-
                     <i class="fas fa-user"></i>
                     <input type="text" placeholder="Nome de usuário">
                 </div>
 
                 <div class="input-field">
-                    <!--icone area sem css-->
                     <i class="fas fa-lock"></i>
                     <input type="password" placeholder="Senha">
                 </div>
 
                 <input type="submit" value="Login" class="btn solid">
 
-                <p class="socoal-text"><br> OU Entre com Rede Social</p>
+                <p class="social-text">OU Entre com Rede Social</p>
+                
                 <div class="midia-social">
 
                 <a href="#" class="social-icone"><!--nesta ancora vai o link do facebook-->
-                    <img src="../imagemsite/facebook.png" class="icone" alt="icone-do-facebook"><br>
-                    <i class="fab fa-facebook-f"> Facebook</i>
+                    <img src="../imagemsite/facebook.png" alt="icone-do-facebook">
+                    <i class="fab fa-facebook"></i>
                 </a>
 
                 <a href="#" class="social-icone"><!--nesta ancora vai o link do instagram-->
-                    <img src="../imagemsite/hackicone.ico" class="icone" alt="icone-instagram"><br>
-                    <i class="fab fa-Instagram">Instagram</i>
-                </a>
-
-                <a href="#" class="social-icone"><!--nesta ancora vai o link do Email-->
-                    <img src="../imagemsite/o-email.png" alt="icone-email" class="icone"><br>
-                    <i class="fab fa-Gmail">Email</i>
-                </a>
-
-                <a href="#" class="social-icone"><!--nesta ancora vai o link do Whatsapp-->
-                    <img src="../imagemsite/whatsapp.png" class="icone" alt="icone-Whatsapp"><br>
-                    <i class="fa fa-linkedin">Whatsapp</i>
+                    <img src="../imagemsite/insta2.png" alt="icone-instagram">
+                    <i class="fab fa-Instagram"></i>
                 </a>
 
                 <a href="#" class="social-icone"><!--nesta ancora vai o link do Linkedin-->
-                    <img src="../imagemsite/hackicone.ico" class="icone" alt="icone-linkedin"><br>
-                    <i class="fa fa-linkedin">Linkedin</i>
+                    <img src="../imagemsite/linkedin.png" alt="icone-linkedin">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+                <a href="#" class="social-icone"><!--nesta ancora vai o link do Email-->
+                    <img src="../imagemsite/o-email.png" alt="icone-email">
+                    <i class="fab fa-Gmail"></i>
                 </a>
 
                 </div>
                 </form>
+
+                <!--pt2-->
+
+                <form action="" class="sign-up-form">
+
+                    <h2 class="titulo">Logon</h2>
+
+                    <div class="input-field">
+                        <!--icone area sem css-->
+    
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Nome de usuario">
+                    </div>
+
+                    <div class="input-field">
+                        <!--icone area sem css-->
+    
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email">
+                    </div>
+    
+                    <div class="input-field">
+                        <!--icone area sem css-->
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </div>
+    
+                    <input type="submit" value="Logon" class="btn solid">
+    
+                    <p class="social-text">OU Entre com Rede Social</p>
+                    
+                    <div class="midia-social">
+    
+                    <a href="#" class="social-icone"><!--nesta ancora vai o link do facebook-->
+                        <img src="../imagemsite/facebook.png" class="icone" alt="icone-do-facebook"><br>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+    
+                    <a href="#" class="social-icone"><!--nesta ancora vai o link do instagram-->
+                        <img src="../imagemsite/insta2.png" class="icone" alt="icone-instagram"><br>
+                        <i class="fab fa-Instagram"></i>
+                    </a>
+    
+                    <a href="#" class="social-icone"><!--nesta ancora vai o link do Linkedin-->
+                        <img src="../imagemsite/linkedin.png" class="icone" alt="icone-linkedin"><br>
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+    
+                    <a href="#" class="social-icone"><!--nesta ancora vai o link do Email-->
+                        <img src="../imagemsite/o-email.png" alt="icone-email" class="icone"><br>
+                        <i class="fab fa-Gmail"></i>
+                    </a>
+    
+                    </div>
+                    </form>
             </div>
         </div>
 
-        <div class="painel-container"></div>
-    </div>
+        <div class="painel-container">
+            <div class="painel painele-esquerdo">
+                <div class="content">
+                    <h3>Novo Aqui</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aliquid vero modi expedita quidem, consequuntur quo tenetur, adipisci molestias earum, ipsum voluptates nulla ut magni aliquam quas excepturi id hic!</p>
+                    <button class="btn transparente" id="sign-in-btn">Cadastre-se</button>
+                </div>
 
+                <img src="../imagemsite/login.png" class="imagem" alt="imagem">
+            </div>
+
+            <div class="painel painele-direito">
+                <div class="content">
+                    <h3>mai Novo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aliquid vero modi expedita quidem, consequuntur quo tenetur, adipisci molestias earum, ipsum voluptates nulla ut magni aliquam quas excepturi id hic!</p>
+                    <button class="btn transparente" id="sign-up-btn">Logon</button>
+                </div>
+
+                <img src="../imagemsite/cadastrar.png" class="imagem" alt="imagem">
+            </div>
+
+        </div>
+    </div>
     </main>
 
-</body>
+<script src="./agoravai.js"></script>
+<script src="../menu/mobilemenu.js"></script>
+
+</body>  
 </html>
