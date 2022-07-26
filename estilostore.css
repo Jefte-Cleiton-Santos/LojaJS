@@ -168,6 +168,12 @@ main {
 
 /*amem*/
 
+h2 {
+    color: var(--cor4);
+    text-align: center;
+    margin-top: 40px;
+}
+
 .container {
     max-width: 1300px;
     margin: auto;
@@ -185,7 +191,10 @@ main {
 
 .coluna2 {
     flex-basis: 50%;
-    min-width: 300px;
+    min-width: 400px;
+    color: var(--cor2);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
 }
 
 .coluna2 img {
@@ -197,7 +206,11 @@ main {
     font-size: 50px;
     font-family: 'nome';
     line-height: 60px;
-    margin: 25px 0;
+    margin: 60px;
+}
+
+.coluna2 p {
+    margin: 20px;
 }
 
 .btn {
