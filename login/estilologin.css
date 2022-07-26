@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body{
+body, input{
     overflow-x: hidden;
     background: #8a9499;
 }
@@ -123,7 +123,7 @@ nav {
 }
 /*fim menu*/
 
-/*agora vai*/
+/*agora vai*/  
 
 .container{
     position: relative;
@@ -243,6 +243,7 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
 .social-icone img:hover{
@@ -250,7 +251,8 @@ form{
     height: 60px;
 }
 
-/*equivale a sigin e signup*/
+/*equivale a class sigin signup part-2*/
+
 .entrar-cadastrar{
     position: absolute;
     top: 50%;
@@ -302,12 +304,12 @@ form.sign-up-form{
     z-index: 7;
 }
 
-.painele-esquerdo{
+.painel-esquerdo{
     pointer-events: all;
     padding: 3rem 17% 2rem 12%;
 }
 
-.painele-direito{
+.painel-direito{
     pointer-events: none;
     padding: 3rem 12% 2rem 12%;
 }
@@ -342,20 +344,20 @@ form.sign-up-form{
     font-size: 1rem;
 }
 
-.painele-direito .content, .painele-direito .imagem{
-    transform: translateX(800px);
-}
-
 /*bugou aqui 18min animação*/
 
-.container .sign-up-mode:before{
+.container.sign-up-mode::before{
     transform: translate(100%, -50%);
     right: 52%;
 }
 
-.container .sign-up-mode .painele-esquerdo .imagem
-.container .sign-up-mode .painele-esquerdo .content{
+.container.sign-up-mode .painel-esquerdo .imagem
+.container.sign-up-mode .painel-esquerdo .content{
     transform: translateX(-800px);
 }
 
-/*pausa em 20 min*/
+.painel-direito .content, .painel-direito .imagem{
+    transform: translateX(800px);
+}
+
+/*pausa em 20 min, revisado, corrigido, erro Javascript não identificado 25/07*/
