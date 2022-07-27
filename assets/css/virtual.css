@@ -1432,6 +1432,17 @@ a:hover, a:active {
 
 /*aqui esta a gambiarra js*/
 
+.logo img{
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+}
+
+#nomefantasia {
+    color: #ebca12;
+    font-size: 2em;
+}
+
 .marketing{
     background-color: #005CFF;
     width: 100%;
