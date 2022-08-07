@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200&display=swap');
+
+@font-face {
+    font-family: 'font1';
+    src: url('../fontes/CAMPUS\ PERSONAL\ USE.ttf') format('TrueType');
+    font-style: normal;
+    font-weight: normal;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*paleta de cores*/
+:root {
+    --cor1:#4d1010;
+    --cor2:#0daf22;
+    --cor3:#e0d20fea;
+    --cor4:#0b1e72;
+    --cor5:#c4c4c4cb;
+    --cor6:#FFCC70;
+}
+
+/*paleta de cores*/
+
+
+
+body {
+        overflow-x: hidden;
+        background: linear-gradient(45deg, #030118f6 43%, #090979 82%, #1f1672e3 100%);
+        background-size: 400% 400%;
+        animation: nice 19s, ease infinite;
+}
+
+@keyframes nice{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 70%;
+    }
+    100% {
+        background-position: 70% 100%;
+    }
+}
+
+p {
+    text-align: justify;
+    text-indent: 10px;
+    font-family: 'font1';
+    font-size: 1.3rem;
+    color: #b48026;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+header{
+    background-color: #6d6a65;
+    width: 100%;
+    height: 150px;
+}
+.agoravai {
+    background-image: url('../imagemsite/starsAgoraVai-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: 100vw, 100vh;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    margin: 5px;
+    color: #b48026;
+}
+
+.slogan h2 {
+    color: var();
+}
+
+h2{
+    color:#b48026;
+    width: 100%;
+    text-align: center;
+}
+
+.digiprodutos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descricao{
+    width: 80%;
+    height: 100px;
+    /*background-color: aqua;*/
+}
+
+/*agora vai*/
+
+.cartao{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #6393bd;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    margin: 10px;
+    /*
+    box-shadow: inset 300px 0 50px #737679, 0 15px 15px #737679; efeito sobra na transição
+    */
+}
+
+.cartao:hover{
+    transform: perspective(2000px) translateX(50%);
+    /*
+    box-shadow: inset 10px 0 50px #737679, 0 10px 10px #737679;
+    */
+}
+
+.cartao .cobrir{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: darkblue;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    transform-origin: left;
+}
+
+.cartao:hover .cobrir{
+    transform: rotateY(180deg);
+}
+
+.cartao .cobrir img{
+    max-width: 100%;
+    z-index: 1;
+}
+
+.cartao .cobrir::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 150%;
+    background-color: darkblue;
+    transform: rotate(36.5deg);
+    box-shadow: 0 0 0 20px skyblue;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+.cartao:hover .cobrir::before{
+    width: 0;
+    box-shadow: 0 0 0 250px #6393bd;
+    transform: rotate(143.5deg);
+}
+
+.cartao .detalhes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+}
+
+.cartao .detalhes h3{
+    font-weight: 500;
+    margin: 5px 0;
+    color: #721717;
+}
+
+.cartao .detalhes{
+    font-size: 1.5em;
+    color: darkgoldenrod;
+    font-weight: 600;
+}
+
+.cartao .detalhes a{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: blue;
+    color: darkgoldenrod;
+    border: 3px solid darkgoldenrod;
+    border-radius: 18px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.cartao .detalhes a:hover{
+    background-color: #ad2626;
+}
+
+#fotoum{
+    height: 150px;
+    width: 150px;
+}
+
+#fotodois{
+    height: 60%;
+    width: 60%;
+}
+/*100% em relação ao container flex*/
+
+
+/*config menu*/
+a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: 1s;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    opacity: 0.9;
+    color: red;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9ba5c;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/*responsividade*/
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 3px;
+    background: green;
+    margin: 9px;
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #680d68;
+        color: #e9ba5c;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 1;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+/*ufa*/
+
+@keyframes navlinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* xzinho do menu*/
+
+.mobile-menu.active .linha1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .linha2{
+    opacity: 0;
+}
+
+.mobile-menu.active .linha3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+/*fim menu*/
+
+footer{
+    background-color: #b48026;
+    color: aliceblue;
+    width: 100vw;
+    height: 80px;
+}
+
+/*amem*/

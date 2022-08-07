@@ -1,0 +1,565 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Source+Sans+Pro:wght@200;300&display=swap');
+
+@font-face {
+    font-family: 'titulo1';
+    src: url('../fontes/YOZAKURA-Regular.otf') format('OpenType');
+    font-style: normal;
+    font-weight: normal;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor0: #8f0707;
+    --cor1: #1544df4f;
+    --cor2: #e6cc38;
+    --cor3: #2bc005;
+    --cor4: #0a0a0ae0;
+    --cor5: #7d6ba79c;
+    --cor6: #96969618;
+    --cor7: #d8d9da67;
+}
+
+body{
+    overflow-x: hidden;
+}
+#icone {
+    display: flex;
+    width: 70px;
+    align-items: flex-start;
+}
+/*
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav {
+    flex: 1;
+    text-align: right;
+    width: 100%;
+}
+*/
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--cor0);
+}
+
+a:hover {
+    color: var(--cor2);
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--cor3);
+}
+
+#carrinho {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.coluna2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.coluna2 p {
+    font-size: 1.3em;
+}
+
+.coluna2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.coluna2 h1 {
+    font-family: 'titulo1';
+    color: var(--cor2);
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--cor5);
+    color: var(--cor2);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border: 2px solid var(--cor0);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: var(--cor7);
+    color: var(--cor0);
+}
+
+header {
+    background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(159,203,157,0.47942927170868344) 76%);
+    color: var(--cor4);
+}
+
+header .linha {
+    margin-top: 10px;
+}
+
+.video video {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 320px;
+    height: 320px;
+}
+
+.video h2 {
+    color: var(--cor1);
+    text-align: center;
+}
+
+/*parte 2 categorias*/
+
+.categorias {
+    margin: 70px 0;
+}
+.coluna3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.coluna3 img {
+    width: 100%;
+}
+
+.coluna3 p {
+    font-size: 18px;
+    color: var(--cor5);
+}
+
+.lolcontainer {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.coluna4 {
+    flex-basis: 25px;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.coluna4 img {
+    width: 100%;
+}
+
+.coluna4 p {
+    text-align: justify;
+    font-size: 15px;
+    text-align: center;
+}
+
+.coluna4:hover {
+    transform: translateY(-8px);
+}
+
+.coluna4 h4 {
+    text-align: center;
+}
+
+.coluna4 img {
+    width: 180px;
+    height: 180px;
+}
+.titulo {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: var(--cor0);
+    font-family: 'titulo1';
+    font-size: 2.5rem;
+}
+
+.titulo::after{
+    content: '';
+    background: var(--cor5);
+    width: 80px;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: var(--cor0);
+    font-weight: normal;
+}
+
+.estrelas .fa {
+    color: var(--cor2);
+}
+
+/*promoção*/
+
+.promocao {
+    background: var(--cor6);
+    margin-top: 80px;
+    padding: 30px 0;
+    border-radius: 18px 0;
+}
+
+.coluna2 .promoimg {
+    padding: 50px;
+}
+
+em {
+    color: var(--cor3);
+    font-weight: bolder;
+}
+
+/*equipe JS*/
+
+.equipejs {
+    padding-top: 100px;
+}
+
+.equipejs .coluna3 {
+    background: var(--cor7);
+    border: 2px solid var(--cor1);
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px #0000005b;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.equipejs .coluna3:hover {
+    transform: translateY(-10px);
+}
+
+.equipejs .coluna3 img {
+    width: 160px;
+    height: 160px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+#sobre {
+    color: var(--cor0);
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+.equipejs .coluna3 h3 {
+    font-weight: 600;
+    color: var(--cor0);
+    font-size: 16px;
+}
+
+/*marcas*/
+
+.marcas {
+    margin: 100px auto;
+}
+
+.coluna5 {
+    width: 160px;
+}
+
+.coluna5 {
+    text-align: center;
+}
+
+.coluna5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+/*esse filtro deixa tudo cinza*/
+
+.coluna5 img:hover {
+    filter: grayscale(0);
+}
+/*devolve cor*/
+
+footer {
+    background: black;
+    color: var(--cor2);
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+footer p {
+    color: var(--cor2);
+}
+
+footer h3 {
+    color: var(--cor0);
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.rodape-coluna1, .rodape-coluna2, .rodape-coluna3, .rodape-coluna4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.rodape-coluna1{
+    flex-basis: 30%;
+}
+
+.rodape-coluna2{
+    flex: 1;
+    text-align: center;
+}
+
+.rodape-coluna2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.rodape-coluna3, .rodape-coluna4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.rodape-coluna4:hover{
+    color: var(--cor0);
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#amem {
+    text-align: center;
+}
+
+footer hr{
+    border: none;
+    background: #51ee2a;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.menu-icone {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/*midia query menu mobile como deu ruim, coloquei menu alternativo que funciona
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: var(--cor5);
+        width: 100%;
+    }
+
+    nav ul{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul a{
+        color: var(--cor2);
+    }
+    .menu-icone{
+        display: block;
+        cursor: pointer;
+    }
+}
+*/
+
+
+/*coprighting css menu*/
+a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: 1s;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    opacity: 0.9;
+    color: red;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1544df88;;
+    height: 8vh;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+#nomefantasia {
+    color: #ebca12;
+    font-size: 2em;
+}
+/*
+main {
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 92vh;                   
+}
+*/
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/*responsividade*/
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 3px;
+    background: green;
+    margin: 9px;
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #680d68;
+        color: #e9ba5c;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 1;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+/*ufa*/
+
+@keyframes navlinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* xzinho do menu*/
+
+.mobile-menu.active .linha1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .linha2{
+    opacity: 0;
+}
+
+.mobile-menu.active .linha3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+#social-midia {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+/*amem*/
+
+/*agora só falta:
+
+1° atualizar produtos
+    2° terminar o footer
+    3° contatos 2.0
+    4° login 2.0
+    5° Pet Store
+    6° tatoo Store
+    7° Cabelereiro Site
+    8° Landing Page
+    9° Implementar o drooping shipping Smartwatch's
+    10° SEO
+
+    LAST UPDATE 04/08/2022
+    */
