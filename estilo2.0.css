@@ -18,13 +18,13 @@
 
 :root {
     --cor0: #8f0707;
-    --cor1: #1544df4f;
+    --cor1: #0c2fa0d3;
     --cor2: #e6cc38;
     --cor3: #2bc005;
     --cor4: #0a0a0ae0;
-    --cor5: #7d6ba79c;
+    --cor5: #7d6ba746;
     --cor6: #96969618;
-    --cor7: #d8d9da67;
+    --cor7: #d8d9da3d;
 }
 
 body{
@@ -110,7 +110,7 @@ nav ul li a {
 .btn {
     display: inline-block;
     background: var(--cor5);
-    color: var(--cor2);
+    color: var(--cor0);
     padding: 8px 30px;
     margin: 30px 0;
     border: 2px solid var(--cor0);
@@ -162,7 +162,7 @@ header .linha {
 
 .coluna3 p {
     font-size: 18px;
-    color: var(--cor5);
+    color: var(--cor1);
 }
 
 .lolcontainer {
