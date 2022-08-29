@@ -36,6 +36,13 @@ nav {
     height: 8vh;
 }
 
+main {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 92vh;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -125,12 +132,13 @@ body{
     background: linear-gradient(90deg, #40277ac0 0%, #2b369996 30%,#459eb96b 30%, rgba(231, 204, 83, 0.76) 100%);*/
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .contatus{
     position: relative;
     width: 100%;
-    padding: 40px, 100px;
+    padding: 10px, 10px;
 }
 
 .contatus .titulo{
